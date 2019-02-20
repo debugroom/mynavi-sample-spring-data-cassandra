@@ -5,7 +5,6 @@ import org.debugroom.mynavi.sample.spring.data.cassandra.domain.model.entity.Myn
 import org.debugroom.mynavi.sample.spring.data.cassandra.domain.repository.SampleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.plugin.util.UIUtil;
 
 import java.util.ArrayList;
 import java.util.List;
