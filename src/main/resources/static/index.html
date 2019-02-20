@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link rel="stylesheet" href="static/css/flex.css" media="(min-width: 1280px)">
+    <link rel="stylesheet" href="static/css/flex_mobile.css" media="(min-width: 320px) and (max-width: 767px)">
+    <link rel="stylesheet" href="static/css/flex_tablet.css" media="(min-width: 768px) and (max-width: 1279px)">
+    <link rel="stylesheet" href="static/css/index.css" media="(min-width: 1280px)">
+    <link rel="stylesheet" href="static/css/index_mobile.css" media="(min-width: 320px) and (max-width: 767px)">
+    <link rel="stylesheet" href="static/css/index_tablet.css" media="(min-width: 768px) and (max-width: 1279px)">
+    <script type="text/javascript" src="webjars/jquery/jquery.js"></script>
+
+</head>
+<body>
+<h1>Hello! Apache Cassandra sample!</h1>
+<div id="flex-container">
+    <div class="flex-item-1">
+      <h2>Call findAll service.</h2>
+      <form id="formForFindAll" action="findAll" method="get">
+        <button id="findAllButton" name="findAllButton" class="main-button" type="submit" value="Submit">find All Data</button>
+      </form>
+      <br>
+      <h2>Call findOne service.</h2>
+      <form id="formForFindOne" action="findOne" method="get">
+        <label for="samplePartitionColumnForFindOne">パーティションカラム</label>
+        <input id="samplePartitionColumnForFindOne" type="text" name="samplePartitionColumn" /><br>
+        <label for="sampleClusterColumnForFindOne">クラスタカラム</label>
+        <input id="sampleClusterColumnForFindOne" type="text" name="sampleClusterColumn" /><br>
+        <button id="findOneButton" name="findOneButton" class="main-button" type="submit" value="Submit">find One Data</button>
+      </form>
+    </div>
+    <div class="flex-item-2">
+      <h2>Call add service.</h2>
+      <form id="formForAdd" action="add" method="post">
+        <label for="sampleTextForAdd">テキスト</label>
+        <input id="sampleTextForAdd" type="text" name="sampleText" />
+        <button id="addButton" name="addButton" class="main-button" type="submit" value="Submit">Add Data</button>
+      </form>
+      <br>
+      <h2>Call Update service.</h2>
+      <form id="formForUpdate" action="update" method="post">
+        <label for="samplePartitionColumnForUpdate">パーティションカラム</label>
+        <input id="samplePartitionColumnForUpdate" type="text" name="samplePartitionColumn" /><br>
+        <label for="sampleClusterColumnForUpdate">クラスタカラム</label>
+        <input id="sampleClusterColumnForUpdate" type="text" name="sampleClusterColumn" /><br>
+        <label for="sampleTextForUpdate">テキスト</label>
+        <input id="sampleTextForUpdate" type="text" name="sampleText" /><br>
+        <button id="updateButton" name="updateButton" class="main-button" type="submit" value="Submit">Update Data</button>
+      </form>
+      <br>
+      <h2>Call Delete service.</h2>
+      <form id="formForDelete" action="delete" method="post">
+        <label for="samplePartitionColumnForDelete">パーティションカラム</label>
+        <input id="samplePartitionColumnForDelete" type="text" name="samplePartitionColumn" /><br>
+        <label for="sampleClusterColumnForDelete">クラスタカラム</label>
+        <input id="sampleClusterColumnForDelete" type="text" name="sampleClusterColumn" /><br>
+        <button id="deleteButton" name="deleteButton" class="main-button" type="submit" value="Submit">Delete Data</button>
+      </form>
+    </div>
+</div>
+</body>
+</html>
